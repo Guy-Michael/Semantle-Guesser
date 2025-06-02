@@ -4,7 +4,7 @@ param(
 )
 
 Write-Host "Started with threshold of ${threshold} and looking for ${numberOfGoodGuesses} good guesses"
-$dictionaryPath = "./newwords5.txt"
+$dictionaryPath = "./dictionary.txt"
 Write-Host "loading words.."
 $lines = Get-Content $dictionaryPath
 Write-Host "finished loading words"
