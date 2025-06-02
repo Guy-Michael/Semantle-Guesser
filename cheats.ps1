@@ -1,4 +1,4 @@
-$filePath = "./words.txt"
+$filePath = "./newwords5.txt"
 $lines = Get-Content $filePath
 $successfulGuesses = @()
 
