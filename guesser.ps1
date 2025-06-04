@@ -1,5 +1,5 @@
 param(
-	[Parameter(Mandatory=$true)] [float] $threshold,
+	[Parameter(Mandatory=$true, HelpMessage="Please enter the minimum score of guesses you'd like to keep")] [float] $threshold,
 	[int] $numberOfGoodGuesses=20
 )
 
