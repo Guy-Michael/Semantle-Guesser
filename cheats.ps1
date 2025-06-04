@@ -11,6 +11,9 @@ Write-Host "finished loading words"
 $guessesFilePath = "./goodGuesses.txt"
 $badWordsPath = "./badWords.txt"
 
+# Ensure files exist before starting the loop
+if (-not (Test-Path $guessesFilePath)) { New-Item -ItemType File -Path $guessesFilePath | Out-Null }
+if (-not (Test-Path $badWordsPath)) { New-Item -ItemType File -Path $badWordsPath | Out-Null }
 
 Write-Host "iterating"
 $counter = 1
